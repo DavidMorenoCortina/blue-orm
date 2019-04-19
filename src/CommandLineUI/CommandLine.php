@@ -45,7 +45,8 @@ class CommandLine {
         $commands = [
             'migrate:create',
             'migrate:up',
-            'migrate:down'
+            'migrate:down',
+            'migrate:last-migration'
         ];
 
         $msg = 'Available commands' . BaseCommand::EOL;

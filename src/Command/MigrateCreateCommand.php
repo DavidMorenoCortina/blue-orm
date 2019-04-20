@@ -7,7 +7,7 @@ class MigrateCreateCommand extends BaseCommand {
 
     public function execute() {
         $parts = explode(' ', microtime());
-        $migrationName = date('Y_m_d_h_m_s_') . str_replace('0.', '', $parts[0]);
+        $migrationName = date('Y_m_d_H_i_s_') . str_replace('0.', '', $parts[0]);
 
         $fileName = 'Migration' . $migrationName;
 
